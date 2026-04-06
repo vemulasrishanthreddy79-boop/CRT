@@ -1,0 +1,35 @@
+print(min([1,2,3,4,5]))
+print(max([1,2,3,4,5]))
+print(sum([1,2,3,4,5]))
+print(abs(12))
+print(abs(-10))
+import math
+
+print(math.factorial(5))
+a = int(input())
+b = int(input())
+min_num = min(a,b)
+
+for i in range(1,min_num+1):
+    if a % i == 0 and b % i == 0:
+        gcd  = 1 
+
+print(gcd)
+
+while b != 0:
+    a,b = b,a%b 
+print(a)
+#LCM
+a = int(input())
+b = int(input())
+import math
+lcm = (a*b)//(math.gcd(a,b))
+print(lcm)
+
+def check_perfect_number(n):
+    s=0
+    for i in range(1,n//2 + 1):
+        if n % i ==0:
+            s+=1
+    return "perfect number" if s == n else "not a perfect number"
+print(check_perfect_number(0))
